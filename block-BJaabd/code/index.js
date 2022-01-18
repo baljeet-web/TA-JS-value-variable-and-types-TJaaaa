@@ -8,16 +8,7 @@ Write a program that asks the user his/her age and check for the following condi
 - `if` the age is between 4-11 then print the message " You are too young to participate in the marathon".
 - `if` the age is less than 4 then print the message " Hey Kiddo! Can You Walk ?"
 - `if` the age is greater than 55 then print the message " You are too old to participate in the marthon".
-👇
-*/
-
-let age = +prompt(" What's your age ?")
-if (age >=12) alert ("You can participate in the marathon")
-else if (age <= 11) alert ("You are too young to participate in the marathon")
-else if (age <4 ) alert ( " Hey Kiddo! Can You Walk ?")
-else (age >55) alert (" You are too old to participate in the marthon")
-
-// Loops
+👇// Loops
 /*
 Given a positive integer `n`. Print the word (hello) in format of heeeello (letter 'e' must be repeated `n` times). Take input from prompt and print the result in alert.
 
@@ -26,6 +17,19 @@ n = 1 => output: hello
 n = 7 => output: heeeeeeello
 👇
 */
+let count = +prompt("Enter the number of e")
+
+const start = "h";
+const end = "ello";
+let middle = "";
+
+for ( let i=0; i < count; i++){
+  middle += "e"
+}
+
+alert(start + middle + end);
+
+
 // [Your code goes here]
 
 /*
